@@ -13,7 +13,10 @@ export const useSocket = () => {
 
 
 export const SocketProvider = (props) => {
-  const socket = useMemo(()=>io('localhost:3000'),[])
+  const socket = useMemo(
+    () => io(import.meta.env.VITE_BACKEND_URL || "localhost:3000"),
+    []
+  );
   return (
     <socketContext.Provider value={socket}>
       {props.children}
