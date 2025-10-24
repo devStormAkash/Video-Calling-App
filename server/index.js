@@ -46,7 +46,9 @@ io.on('connection', (socket) => {
   
 })
 
-
+app.get("/", (req, res) => {
+  res.send("Server is live now");
+});
 
 expressServer.listen(3000, () => {
   console.log("Server is running at the port : ", 3000);
