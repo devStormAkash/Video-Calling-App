@@ -214,7 +214,7 @@ const VideoRoom = () => {
               ref={myVideoStream}
               autoPlay
               muted
-              style={{ width: "300px", height: "200px", marginTop: "20px" }}
+              style={{ width: "400px", height: "266px", marginTop: "20px" }}
               className="border-2 border-gray-300 rounded"
             />
           </>
@@ -225,13 +225,19 @@ const VideoRoom = () => {
             <h1 className="text-2xl font-semibold my-4 text-gray-500">
               Remote Video
             </h1>
-            <video
-              ref={otherVideoStream}
-              autoPlay
-              muted
-              style={{ width: "300px", height: "200px", marginTop: "20px" , marginBottom:"20px" }}
-              className="border-2 border-gray-300 rounded"
-            />
+            <div className="mb-10 bg-green-300">
+              <video
+                ref={otherVideoStream}
+                autoPlay
+                style={{
+                  width: "400px",
+                  height: "266px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                }}
+                className="border-2 border-gray-300 rounded"
+              />
+            </div>
           </>
         )}
       </div>
