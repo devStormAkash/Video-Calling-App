@@ -40,7 +40,7 @@ const Home = () => {
         <div className="h-screen w-full bg-blue-950 flex justify-center items-center gap-4">
           <form
             onSubmit={handleSubmit}
-            className="flex border rounded-xl justify-center items-start flex-col gap-y-3 px-6 py-5 bg-gray-200"
+            className="flex border rounded-xl justify-center items-start flex-col gap-y-3 px-6 py-5 bg-gray-200 mx-2.5"
           >
             <label id="email" className="font-semibold -mb-2 text-xl text-black">
               Enter your email
@@ -55,7 +55,7 @@ const Home = () => {
               className="px-3 py-2 border rounded bg-gray-300 w-full"
             />
             <label id="room" className="font-semibold -mb-2 text-xl text-black">
-              Enter room name you want to join
+              Enter room ID to join
             </label>
             <input
               type="text"
