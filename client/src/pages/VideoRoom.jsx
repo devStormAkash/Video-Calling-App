@@ -172,7 +172,7 @@ const VideoRoom = () => {
 
   return (
     <>
-      <div className="w-full h-screen bg-purple-300 mx-3 flex flex-col items-center justify-start mt-5">
+      <div className="w-full h-screen bg-purple-300  flex flex-col items-center justify-start">
         <h1 className="text-5xl font-semibold text-center">Video Room</h1>
         {remoteSocketId && (
           <p className="border p-3 rounded bg-green-100 text-xl my-4 text-green-800">
