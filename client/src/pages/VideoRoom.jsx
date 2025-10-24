@@ -172,7 +172,7 @@ const VideoRoom = () => {
 
   return (
     <>
-      <div className="w-full h-screen flex flex-col items-center justify-start mt-5">
+      <div className="w-full h-screen bg-purple-300 mx-3 flex flex-col items-center justify-start mt-5">
         <h1 className="text-5xl font-semibold text-center">Video Room</h1>
         {remoteSocketId && (
           <p className="border p-3 rounded bg-green-100 text-xl my-4 text-green-800">
@@ -210,13 +210,14 @@ const VideoRoom = () => {
             <h1 className="text-2xl font-semibold my-4 text-gray-500">
               My Video
             </h1>
-            <video
-              ref={myVideoStream}
-              autoPlay
-              muted
-              style={{ width: "400px", height: "266px", marginTop: "20px" }}
-              className="border-2 border-gray-300 rounded"
-            />
+            <div className="bg-yellow-300">
+              <video
+                ref={myVideoStream}
+                autoPlay
+                style={{ width: "400px", height: "266px", marginTop: "20px" }}
+                className="border-2 border-gray-300 rounded"
+              />
+            </div>
           </>
         )}
 
